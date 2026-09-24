@@ -1,2 +1,2 @@
-let names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
+let names = ['Madhu', 'Karthik', 'Rahul']
 console.log(names);
