@@ -1,2 +1,2 @@
-let names = ['Madhu', 'Karthik', 'Rahul']
-console.log(names);
+let courses = ['HTML', 'CSS', 'JavaScript'];
+console.log(courses);
