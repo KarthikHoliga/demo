@@ -1,5 +1,4 @@
-const numbers = [10,20,30,40,50];
+let numbers = [2,4,6,8,10];
 
-const reversed = numbers.reverse();
-console.log(reversed);
-console.log(numbers);
+let reversed = numbers.reverse();
+console.log(numbers)
