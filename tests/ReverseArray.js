@@ -1,4 +1,4 @@
-let numbers = [2,4,6,8,10];
+let numbers = [1,2,3,4,5];
 
 let reversed = numbers.reverse();
 console.log(numbers)
