@@ -15,5 +15,5 @@ test('Login into application using valid credentials', async function({page}) {
 
   await expect(page.getByLabel("username")).toHaveValue("student")
 
-  await page.locator("#password").presssequentially("Password123!")
+  await page.locator("#password").pressSequentially("Password123!")
 })

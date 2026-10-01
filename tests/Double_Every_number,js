@@ -1,0 +1,5 @@
+let numbers = [5, 10, 15, 20];
+
+let doubled = numbers.map(num => num * 3)
+
+console.log(doubled)
