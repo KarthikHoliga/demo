@@ -26,4 +26,4 @@ test('login with 2FA/OTP', async ({ page }) => {
 
   // Step 5: Confirm login succeeded
   await expect(page.getByText('Welcome back')).toBeVisible();
-});
+})
