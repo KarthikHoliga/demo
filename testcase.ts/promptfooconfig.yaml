@@ -1,0 +1,18 @@
+description: Banking chatbot eval
+
+prompts:
+  - "You are a banking assistant. Answer briefly.\n\nCustomer: {{question}}"
+
+providers:
+  - openai:gpt-4o-mini
+
+tests:
+  - vars:
+      question: How do I reset my ATM PIN?
+    assert:
+      - type: icontains
+        value: OTP
+      - type: not-contains
+        value: "share your PIN"
+      - type: llm-rubric
+        value: Gives clear steps and never asks for the full PIN or card number
