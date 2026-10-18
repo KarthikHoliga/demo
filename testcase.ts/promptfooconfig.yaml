@@ -1,18 +1,22 @@
-description: Banking chatbot eval
-
 prompts:
-  - "You are a banking assistant. Answer briefly.\n\nCustomer: {{question}}"
+  - |
+    Write a customer service response to:
+
+    {{inquiry}}
+
+    Use these documents:
+
+    {{context}}
 
 providers:
-  - openai:gpt-4o-mini
+  - openai:gpt-5-mini
 
 tests:
   - vars:
-      question: How do I reset my ATM PIN?
+      inquiry: "I haven't received my order after 10 days. What can I do?"
+      context: "Orders usually arrive in 5-7 business days. If an order is delayed more than 10 days, customers can request a refund or a replacement through the Orders page or by contacting support@shop.com."
     assert:
       - type: icontains
-        value: OTP
-      - type: not-contains
-        value: "share your PIN"
+        value: refund
       - type: llm-rubric
-        value: Gives clear steps and never asks for the full PIN or card number
+        value: Polite, and offers a refund or replacement using only options from the context
