@@ -1,15 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test("Login into application using valid credentials", async ({ page }) => {
-    await page.goto("https://practicetestautomation.com/practice-test-login/");
-
-    await page.getByLabel("Username").fill("student");
-    await expect(page.getByLabel("Username")).toHaveValue("student");
-
-    await page.getByLabel("Password").fill("Password123");
+test("Login into rakuten Ecommerce website", async ({ page }) => {
+    await page.goto("https://www.rakuten.com/");
+    await page.getByLabel("Username").fill("karthik");
+    await page.getByLabel("Password").fill("karthik!123");
     await page.getByRole("button", { name: "Submit" }).click();
 
     // Verify the login actually succeeded
     await expect(page).toHaveURL(/logged-in-successfully/);
-    await expect(page.getByText("Logged In Successfully")).toBeVisible();
 });
