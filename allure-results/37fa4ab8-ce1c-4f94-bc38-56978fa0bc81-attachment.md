@@ -1,0 +1,442 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UIbasics.spec.ts >> fill and submit basic form
+- Location: tests\UIbasics.spec.ts:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByPlaceholder('Enter your name')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "⚡ Sitewide 50% off on every kit · never before pricesShop now →" [ref=e2] [cursor=pointer]:
+    - /url: /products
+  - banner [ref=e9]:
+    - navigation [ref=e10]:
+      - link "Sreenidhi Rajakrishnan" [ref=e11] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "🔥 Interview Success Kits" [ref=e15] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=e16]:
+            - button "Roadmaps" [ref=e17] [cursor=pointer]
+          - listitem [ref=e20]:
+            - button "Interview Prep" [ref=e21] [cursor=pointer]
+          - listitem [ref=e24]:
+            - button "AI for QA" [ref=e25] [cursor=pointer]
+          - listitem [ref=e28]:
+            - button "Upskill" [ref=e29] [cursor=pointer]
+          - listitem [ref=e32]:
+            - link "About" [ref=e33] [cursor=pointer]:
+              - /url: /about
+        - link "Access your purchase" [ref=e34] [cursor=pointer]:
+          - /url: /account?tab=purchases
+        - link "Your account" [ref=e36] [cursor=pointer]:
+          - /url: /account
+        - button "Open cart" [ref=e40] [cursor=pointer]
+  - main [ref=e45]:
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: New · AI Testing kits
+          - heading "AI Testing Interview Kits, launching Wednesday 21 Oct" [level=1] [ref=e53]
+          - paragraph [ref=e55]: Learn how AI works, answer the AI questions interviewers ask, and write the code they test you on.
+          - paragraph [ref=e57]: The AI Testing kits are live now.
+          - paragraph [ref=e58]:
+            - text: Waitlist gets early access on Tue 20 Oct, 10:00 AM IST, and all three kits for
+            - strong [ref=e59]: ₹799
+            - text: instead of ₹999.
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]: First name
+              - textbox "First name" [ref=e65]
+            - generic [ref=e66]:
+              - generic [ref=e67]: Email
+              - textbox "Email" [ref=e68]
+          - group "Where are you with AI testing?" [ref=e69]:
+            - generic [ref=e71]:
+              - generic [ref=e72] [cursor=pointer]:
+                - radio "Just starting" [ref=e73]
+                - generic [ref=e74]: Just starting
+              - generic [ref=e75] [cursor=pointer]:
+                - radio "I use AI tools at work" [ref=e76]
+                - generic [ref=e77]: I use AI tools at work
+              - generic [ref=e78] [cursor=pointer]:
+                - radio "I test AI features already" [ref=e79]
+                - generic [ref=e80]: I test AI features already
+          - generic [ref=e82]:
+            - text: Website
+            - textbox [ref=e83]
+          - button "Join the waitlist" [ref=e84] [cursor=pointer]
+          - paragraph [ref=e85]: Free to join. One welcome email now, one when early access opens.
+      - generic [ref=e86]:
+        - heading "Three kits, one for every stage" [level=2] [ref=e87]
+        - paragraph [ref=e88]: Start with the basics, go deep on interview answers, or practise the code. Real pages from each kit below.
+        - generic [ref=e89]:
+          - article [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - link [ref=e93] [cursor=pointer]:
+                  - /url: /ai-kit/beginners-cover.jpg
+                  - img "Cover of AI Testing for Beginners" [ref=e94]
+                - link [ref=e95] [cursor=pointer]:
+                  - /url: /ai-kit/beginners-learn-hallucinations.jpg
+                  - 'img "A Learn page from the Beginners kit: Hallucinations, why AI makes things up" [ref=e96]'
+                - paragraph [ref=e97]: Tap a page to see it bigger
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - heading "AI Testing for Beginners" [level=3] [ref=e100]
+                  - generic [ref=e101]: Beginner
+                - paragraph [ref=e102]: Concepts + in-depth explanation. No coding needed.
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - strong [ref=e105]: "28"
+                    - generic [ref=e106]: concepts
+                  - generic [ref=e107]:
+                    - strong [ref=e108]: "92"
+                    - generic [ref=e109]: interview questions
+                  - generic [ref=e110]:
+                    - strong [ref=e111]: "148"
+                    - generic [ref=e112]: pages
+                - list [ref=e113]:
+                  - listitem [ref=e114]:
+                    - generic [ref=e116]: "Starts from zero: AI, ML, LLMs, tokens, prompts, temperature and why AI makes things up."
+                  - listitem [ref=e117]:
+                    - generic [ref=e119]: "How AI products are built: embeddings, RAG, agents and MCP, in plain words."
+                  - listitem [ref=e120]:
+                    - generic [ref=e122]: "Using AI in your testing work: test cases from a user story, test data, bug reports and test plans."
+                  - listitem [ref=e123]:
+                    - generic [ref=e125]: "Testing AI features: golden sets, checking answers against sources, AI judges and chatbots."
+                  - listitem [ref=e126]:
+                    - generic [ref=e128]: Safety, bias, speed and cost, then a clear path from manual testing into an AI testing role.
+                  - listitem [ref=e129]:
+                    - generic [ref=e131]: A one-page Learn block with pictures for every concept, a quiz after every section and a 12 question Final Mock.
+                - paragraph [ref=e132]: Launch price ₹599
+          - article [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - link [ref=e136] [cursor=pointer]:
+                  - /url: /ai-kit/expert-cover.jpg
+                  - img "Cover of Top 150 AI Testing Interview Q&A" [ref=e137]
+                - link [ref=e138] [cursor=pointer]:
+                  - /url: /ai-kit/expert-qa-rag.jpg
+                  - 'img "A full question from the Expert kit: What is RAG, and why would a team use it?" [ref=e139]'
+                - paragraph [ref=e140]: Tap a page to see it bigger
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - heading "Top 150 AI Testing Interview Q&A" [level=3] [ref=e143]
+                  - generic [ref=e144]: Expert
+                - paragraph [ref=e145]: For people who know the basics. Concept, interview strategy and code for every question.
+                - generic [ref=e146]:
+                  - generic [ref=e147]:
+                    - strong [ref=e148]: "155"
+                    - generic [ref=e149]: questions
+                  - generic [ref=e150]:
+                    - strong [ref=e151]: "12"
+                    - generic [ref=e152]: sections
+                  - generic [ref=e153]:
+                    - strong [ref=e154]: "291"
+                    - generic [ref=e155]: pages
+                - list [ref=e156]:
+                  - listitem [ref=e157]:
+                    - generic [ref=e159]: AI and LLM fundamentals, prompt engineering, AI test tools, agents and MCP.
+                  - listitem [ref=e160]:
+                    - generic [ref=e162]: ML metrics, LLM evaluation, RAG testing, chatbots and agent workflows.
+                  - listitem [ref=e163]:
+                    - generic [ref=e165]: AI safety and security, robustness and performance, test strategy and behavioural questions.
+                  - listitem [ref=e166]:
+                    - generic [ref=e168]: "Every answer in three parts: the concept, how to say it out loud in the interview, and a short code or prompt example."
+                  - listitem [ref=e169]:
+                    - generic [ref=e171]: "Real eval tools shown in action: DeepEval, promptfoo, Ragas, LangSmith and Braintrust."
+                  - listitem [ref=e172]:
+                    - generic [ref=e174]: Each question marked Junior, Mid or Senior, a quiz after every section and a Final Mock Quiz.
+                - paragraph [ref=e175]: Launch price ₹499
+          - article [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - link [ref=e179] [cursor=pointer]:
+                  - /url: /ai-kit/coding-cover.jpg
+                  - img "Cover of the AI Testing Coding Kit" [ref=e180]
+                - link [ref=e181] [cursor=pointer]:
+                  - /url: /ai-kit/coding-solution-levenshtein.jpg
+                  - img "A solution page from the Coding Kit with the real program output" [ref=e182]
+                - paragraph [ref=e183]: Tap a page to see it bigger
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - heading "AI Testing Coding Kit" [level=3] [ref=e186]
+                  - generic [ref=e187]: Coding
+                - paragraph [ref=e188]: Problem, approach, solution, output and walkthrough for every program.
+                - generic [ref=e189]:
+                  - generic [ref=e190]:
+                    - strong [ref=e191]: "100"
+                    - generic [ref=e192]: programs
+                  - generic [ref=e193]:
+                    - strong [ref=e194]: "9"
+                    - generic [ref=e195]: sections
+                  - generic [ref=e196]:
+                    - strong [ref=e197]: Python
+                    - generic [ref=e198]: runs offline
+                - list [ref=e199]:
+                  - listitem [ref=e200]:
+                    - generic [ref=e202]: 100 Python programs an AI testing interview can ask you to write in a live editor.
+                  - listitem [ref=e203]:
+                    - generic [ref=e205]: Test harness basics, checking LLM output, text similarity and model metrics from scratch.
+                  - listitem [ref=e206]:
+                    - generic [ref=e208]: Eval harnesses and LLM-as-judge, RAG pipeline testing, safety and bias tests.
+                  - listitem [ref=e209]:
+                    - generic [ref=e211]: Chatbots and tool calling, plus AI for QA helpers like healing a broken locator and sorting flaky tests.
+                  - listitem [ref=e212]:
+                    - generic [ref=e214]: Standard library only, and every output shown was produced by actually running the program.
+                  - listitem [ref=e215]:
+                    - generic [ref=e217]: Ends with a timed 20 prompt Final Self-Assessment.
+                - paragraph [ref=e218]: Launch price ₹599
+        - generic [ref=e219]:
+          - paragraph [ref=e220]:
+            - strong [ref=e221]: "All three as one bundle: ₹999."
+            - text: Waitlist members get it for
+            - strong [ref=e222]: ₹799
+            - text: during early access.
+          - paragraph [ref=e223]: "Coming with the launch: every kit also opens on an online learning portal with progress tracking, quizzes and coding practice. The PDFs are included too."
+        - group [ref=e224]:
+          - generic "New to these words? A quick glossary" [ref=e225] [cursor=pointer]
+      - generic [ref=e226]:
+        - heading "Why AI testing now" [level=2] [ref=e227]
+        - list [ref=e228]:
+          - listitem [ref=e229]: Companies are adding AI to their apps, like chatbots, smart search and summaries. Every one of those features needs a tester.
+          - listitem [ref=e230]: Interviewers now ask QA and SDET candidates about AI, even for regular automation roles.
+          - listitem [ref=e231]: "Testing AI is a new skill: the same question can get a different answer each time, so you learn new ways to check it."
+          - listitem [ref=e232]: It is still early. Learning it now puts you ahead when the next role opens.
+      - generic [ref=e233]:
+        - paragraph [ref=e234]: Waitlist perk
+        - heading "Get in first, pay less" [level=2] [ref=e235]
+        - generic [ref=e236]:
+          - generic [ref=e237]:
+            - paragraph [ref=e238]: Early access
+            - paragraph [ref=e239]: Tuesday 20 Oct, 10:00 AM IST. A full day before everyone else.
+          - generic [ref=e240]:
+            - paragraph [ref=e241]: Founder bundle
+            - paragraph [ref=e242]:
+              - text: All three kits for
+              - strong [ref=e243]: ₹799
+              - text: instead of ₹999, for those 24 hours only.
+        - link "Save my spot" [ref=e244] [cursor=pointer]:
+          - /url: "#join-bottom"
+      - generic [ref=e245]:
+        - heading "Questions" [level=2] [ref=e246]
+        - generic [ref=e247]:
+          - group [ref=e248]:
+            - generic "When does it launch?" [ref=e249] [cursor=pointer]:
+              - text: When does it launch?
+              - generic [aria-hidden] [ref=e250]: +
+          - group [ref=e251]:
+            - generic "What do I get?" [ref=e252] [cursor=pointer]:
+              - text: What do I get?
+              - generic [aria-hidden] [ref=e253]: +
+          - group [ref=e254]:
+            - generic "How does early access work?" [ref=e255] [cursor=pointer]:
+              - text: How does early access work?
+              - generic [aria-hidden] [ref=e256]: +
+          - group [ref=e257]:
+            - generic "Is this included in the kits I already bought?" [ref=e258] [cursor=pointer]:
+              - text: Is this included in the kits I already bought?
+              - generic [aria-hidden] [ref=e259]: +
+          - group [ref=e260]:
+            - generic "Do I need to know coding?" [ref=e261] [cursor=pointer]:
+              - text: Do I need to know coding?
+              - generic [aria-hidden] [ref=e262]: +
+      - generic [ref=e263]:
+        - heading "Save your spot for 20 Oct" [level=2] [ref=e264]
+        - paragraph [ref=e266]: Early access and ₹799 for all three kits, only for the waitlist.
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: First name
+              - textbox "First name" [ref=e272]
+            - generic [ref=e273]:
+              - generic [ref=e274]: Email
+              - textbox "Email" [ref=e275]
+          - group "Where are you with AI testing?" [ref=e276]:
+            - generic [ref=e278]:
+              - generic [ref=e279] [cursor=pointer]:
+                - radio "Just starting" [ref=e280]
+                - generic [ref=e281]: Just starting
+              - generic [ref=e282] [cursor=pointer]:
+                - radio "I use AI tools at work" [ref=e283]
+                - generic [ref=e284]: I use AI tools at work
+              - generic [ref=e285] [cursor=pointer]:
+                - radio "I test AI features already" [ref=e286]
+                - generic [ref=e287]: I test AI features already
+          - generic [ref=e289]:
+            - text: Website
+            - textbox [ref=e290]
+          - button "Join the waitlist" [ref=e291] [cursor=pointer]
+          - paragraph [ref=e292]: Free to join. One welcome email now, one when early access opens.
+  - contentinfo [ref=e293]:
+    - generic [ref=e296]:
+      - paragraph [ref=e297]: Free QA resources, straight to your inbox
+      - paragraph [ref=e298]: Cheat sheets, AI prompts, roadmaps & interview tips as they drop. Check all folders so nothing gets missed.
+      - generic [ref=e300]:
+        - textbox "Your name" [ref=e301]
+        - textbox "Email address" [ref=e302]
+        - button "Get free resources" [ref=e303] [cursor=pointer]
+    - generic [ref=e304]:
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - paragraph [ref=e307]: Kits
+          - list [ref=e308]:
+            - listitem [ref=e309]:
+              - link "All kits" [ref=e310] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=e311]:
+              - link "Robot Framework kit" [ref=e312] [cursor=pointer]:
+                - /url: /robot-framework
+            - listitem [ref=e313]:
+              - link "Coding kits" [ref=e314] [cursor=pointer]:
+                - /url: /codingkits
+            - listitem [ref=e315]:
+              - link "Build a bundle" [ref=e316] [cursor=pointer]:
+                - /url: /build-your-bundle
+            - listitem [ref=e317]:
+              - link "QA Pro" [ref=e318] [cursor=pointer]:
+                - /url: /pro
+        - generic [ref=e319]:
+          - paragraph [ref=e320]: Practice
+          - list [ref=e321]:
+            - listitem [ref=e322]:
+              - link "Interview questions" [ref=e323] [cursor=pointer]:
+                - /url: /interview-questions
+            - listitem [ref=e324]:
+              - link "API testing practice" [ref=e325] [cursor=pointer]:
+                - /url: /api-testing-practice
+            - listitem [ref=e326]:
+              - link "Practice hub" [ref=e327] [cursor=pointer]:
+                - /url: /practice
+            - listitem [ref=e328]:
+              - link "Coding challenge" [ref=e329] [cursor=pointer]:
+                - /url: /challenge
+            - listitem [ref=e330]:
+              - link "Manual testing" [ref=e331] [cursor=pointer]:
+                - /url: /manual-testing
+        - generic [ref=e332]:
+          - paragraph [ref=e333]: Learn free
+          - list [ref=e334]:
+            - listitem [ref=e335]:
+              - link "Roadmaps" [ref=e336] [cursor=pointer]:
+                - /url: /roadmaps
+            - listitem [ref=e337]:
+              - link "AI for QA" [ref=e338] [cursor=pointer]:
+                - /url: /ai-for-qa
+            - listitem [ref=e339]:
+              - link "Free resources" [ref=e340] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e341]:
+              - link "AI prompts" [ref=e342] [cursor=pointer]:
+                - /url: /prompts
+            - listitem [ref=e343]:
+              - link "Upskilling calendar" [ref=e344] [cursor=pointer]:
+                - /url: /qa-upskilling-calendar
+        - generic [ref=e345]:
+          - paragraph [ref=e346]: Tools
+          - list [ref=e347]:
+            - listitem [ref=e348]:
+              - link "Profile optimizer" [ref=e349] [cursor=pointer]:
+                - /url: /optimizeprofile
+            - listitem [ref=e350]:
+              - link "LinkedIn review" [ref=e351] [cursor=pointer]:
+                - /url: /linkedin-review
+            - listitem [ref=e352]:
+              - link "Severity vs Priority" [ref=e353] [cursor=pointer]:
+                - /url: /severity-vs-priority
+            - listitem [ref=e354]:
+              - link "XPath / CSS cheatsheet" [ref=e355] [cursor=pointer]:
+                - /url: /xpath-css-cheatsheet
+        - generic [ref=e356]:
+          - paragraph [ref=e357]: More
+          - list [ref=e358]:
+            - listitem [ref=e359]:
+              - link "Access your purchase" [ref=e360] [cursor=pointer]:
+                - /url: /account?tab=purchases
+            - listitem [ref=e361]:
+              - link "Email me my links" [ref=e362] [cursor=pointer]:
+                - /url: /download
+            - listitem [ref=e363]:
+              - link "About" [ref=e364] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e365]:
+              - link "Community" [ref=e366] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e367]:
+              - link "YouTube" [ref=e368] [cursor=pointer]:
+                - /url: /youtube
+            - listitem [ref=e369]:
+              - link "Instagram" [ref=e370] [cursor=pointer]:
+                - /url: https://instagram.com/sreenidhirajakrishnan
+      - paragraph [ref=e371]: Helping QA engineers crack interviews and build careers.
+    - generic [ref=e372]:
+      - generic [ref=e373]: © 2026 Sreenidhi Rajakrishnan. All rights reserved.
+      - generic [ref=e374]:
+        - link "Privacy" [ref=e375] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=e376] [cursor=pointer]:
+          - /url: /terms
+  - alert [ref=e377]
+  - status [ref=e378]:
+    - link "Shop the interview success kits" [ref=e379] [cursor=pointer]:
+      - /url: /products
+      - generic [ref=e380]: 🎉
+      - generic [ref=e381]:
+        - paragraph [ref=e382]: Komalah R. purchased Playwright TypeScript Coding Kit
+        - paragraph [ref=e383]: ✅ Verified purchase · 5 hours ago
+        - paragraph [ref=e384]: Shop the kits →
+      - button "Dismiss" [ref=e385]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | test('fill and submit basic form', async ({ page }) => {
+  4  |   // 1. Open the page
+  5  |   await page.goto('https://www.sreenidhirajakrishnan.com/ai-testing-kit');
+  6  | 
+  7  |   // 2. Fill the fields
+> 8  |   await page.getByPlaceholder('Enter your name').fill('Karthik');
+     |                                                  ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  9  |   await page.getByPlaceholder('Enter password').fill('Test@1234');
+  10 |   await page.getByPlaceholder('Enter email').fill('karthik@example.com');
+  11 |   await page.getByPlaceholder('Enter phone').fill('9876543210');
+  12 |   await page.getByPlaceholder('Tell us about yourself').fill('Test engineer');
+  13 | 
+  14 |   // 3. Click Submit
+  15 |   await page.getByRole('button', { name: 'Submit' }).click();
+  16 | 
+  17 |   // 4. Check the status text changed
+  18 |   await expect(page.getByText('Not submitted')).toBeHidden();
+  19 | 
+  20 |   // 5. Click Reset and check the fields are empty
+  21 |   await page.getByRole('button', { name: 'Reset' }).click();
+  22 |   await expect(page.getByPlaceholder('Enter your name')).toBeEmpty();
+  23 |   await expect(page.getByText('Not submitted')).toBeVisible();
+  24 | });
+```
