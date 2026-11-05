@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"smokeTest": "npx playwright test"},
+  "scripts": {
+    "smokeTest": "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.5.0",
-    "allure-playwright": "^3.13.0"
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
   },
   "directories": {
     "test": "tests"
@@ -20,7 +24,6 @@
     "otplib": "^12.0.1",
     "playwright": "^1.63.0",
     "playwright-core": "^1.63.0",
-    "typescript": "^7.0.2",
     "undici-types": "^8.9.0"
   }
 }

@@ -1,18 +1,11 @@
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  role: string;
-}
-
-function getUser(): Promise<User> {
-  return new Promise<User>((resolve) => {
+function getUser() {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
         id: 1,
         name: "Karthik",
         email: "karthik@example.com",
-        role: "Test Engineer",
+        role: "Test Engineer"
       });
     }, 2000);
   });
@@ -20,7 +13,7 @@ function getUser(): Promise<User> {
 
 console.log("Fetching user details...");
 
-getUser().then((user: User) => {
+getUser().then((user) => {
   console.log("User details:");
   console.log("ID:", user.id);
   console.log("Name:", user.name);

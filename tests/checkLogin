@@ -1,0 +1,27 @@
+function checkLogin(status: boolean): Promise<string> {
+  return new Promise<string>((resolve, reject) => {
+    if (status) {
+      resolve("Login Successful");
+    } else {
+      reject("Invalid Credentials");
+    }
+  });
+}
+
+// Success case
+checkLogin(true)
+  .then((message: string) => {
+    console.log("Success:", message);
+  })
+  .catch((error: string) => {
+    console.log("Error:", error);
+  });
+
+// Failure case
+checkLogin(false)
+  .then((message: string) => {
+    console.log("Success:", message);
+  })
+  .catch((error: string) => {
+    console.log("Error:", error);
+  });
